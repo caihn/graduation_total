@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1ebeb"
+    tools:context="graduation.chn.cn.graduation.LoginActivity">
+
+    <include layout="@layout/top_no_return"></include>
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/shape_et_login"
+        android:drawableLeft="@mipmap/login_draleft_user"
+        android:hint="请输入用户名" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_user"
+        android:layout_alignStart="@+id/et_user"
+        android:layout_below="@+id/et_user"
+        android:background="@drawable/shape_et_login"
+        android:drawableLeft="@mipmap/ic_lock_outline_black_18dp"
+        android:hint="请输入密码" />
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_pwd"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="登陆"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_bt_login"
+        />
+    <TextView
+        android:id="@+id/tv_notice_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="注册账号"
+        android:textSize="15sp"
+        android:textColor="#aee7a8"
+        android:layout_below="@+id/bt_login"
+        android:layout_marginTop="150dp"
+        />
+
+</RelativeLayout>

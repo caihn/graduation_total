@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbfbfb"
+    tools:context="graduation.chn.cn.graduation.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_menu">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_tabbottom_color"
+        android:paddingTop="12dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/tab_menu_style"
+            android:drawableTop="@drawable/select_tab_dratop_home"
+            android:textColor="@drawable/select_tab_menu_textcolor"
+            android:text="看看" />
+
+        <RadioButton
+            android:id="@+id/rb_study"
+            style="@style/tab_menu_style"
+            android:drawableTop="@drawable/select_tab_dratop_study"
+            android:textColor="@drawable/select_tab_menu_textcolor"
+            android:text="吾爱学习" />
+
+        <RadioButton
+            android:id="@+id/rb_market"
+            style="@style/tab_menu_style"
+            android:drawableTop="@drawable/select_tab_dratop_market"
+            android:textColor="@drawable/select_tab_menu_textcolor"
+            android:text="发现" />
+
+        <RadioButton
+            android:id="@+id/rb_person"
+            style="@style/tab_menu_style"
+            android:drawableTop="@drawable/select_tab_dratop_person"
+            android:textColor="@drawable/select_tab_menu_textcolor"
+            android:text="个人中心" />
+    </RadioGroup>
+
+</RelativeLayout>
